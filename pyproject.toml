@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetry-toplevel"
+version = "0.1.0"
+description = ""
+authors = ["Jorge Bodega Fernanz <jorge.bodega.f@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "poetry_toplevel" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+black = { extras = ["d"], version = "^23.3.0" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
